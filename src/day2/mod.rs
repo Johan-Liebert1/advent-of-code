@@ -28,14 +28,10 @@ const NEED_LOSE: &str = "X";
 const NEED_DRAW: &str = "Y";
 const NEED_WIN: &str = "Z";
 
-use std::fs;
-
-fn read_input() -> String {
-    fs::read_to_string("src/day2/input.txt").unwrap()
-}
+use crate::helper::read_input;
 
 pub fn part1() {
-    let input = read_input();
+    let input = read_input(2);
 
     let vec: i32 = input
         .split("\n")
@@ -80,7 +76,7 @@ pub fn part1() {
 }
 
 pub fn part2() {
-    let input = read_input();
+    let input = read_input(2);
 
     let vec: i32 = input
         .split("\n")
