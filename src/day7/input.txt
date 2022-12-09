@@ -1,0 +1,7 @@
+$ cd /
+$ ls
+dir Anime
+$ cd Anime
+$ ls
+100 Monster
+200 Mushishi
