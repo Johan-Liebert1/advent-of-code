@@ -164,7 +164,7 @@ fn move_tail_part2(vector: &mut Vec<Pos>, head_pos: usize, tail_pos: usize) {
 }
 
 pub fn part1() {
-    let file = read_input(9);
+    let file = read_input(9, false);
 
     let mut set = HashSet::new();
     let mut current_head = Pos { x: 0, y: 0 };
@@ -217,7 +217,7 @@ pub fn part1() {
 
 
 pub fn part2() {
-    let file = read_input(9);
+    let file = read_input(9, false);
 
     let mut set = HashSet::new();
     let mut current_head = Pos { x: 0, y: 0 };

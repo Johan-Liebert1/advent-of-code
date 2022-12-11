@@ -83,7 +83,7 @@ fn scenic_score(vector: &Vec<Vec<u32>>, i: usize, j: usize) -> usize {
 }
 
 fn get_vector() -> Vec<Vec<u32>> {
-    let file = read_input(8);
+    let file = read_input(8, false);
 
     let mut vector = file
         .split("\n")

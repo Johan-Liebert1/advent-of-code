@@ -31,7 +31,7 @@ const NEED_WIN: &str = "Z";
 use crate::helper::read_input;
 
 pub fn part1() {
-    let input = read_input(2);
+    let input = read_input(2, false);
 
     let vec: i32 = input
         .split("\n")
@@ -76,7 +76,7 @@ pub fn part1() {
 }
 
 pub fn part2() {
-    let input = read_input(2);
+    let input = read_input(2, false);
 
     let vec: i32 = input
         .split("\n")

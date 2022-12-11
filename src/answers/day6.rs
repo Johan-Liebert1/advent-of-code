@@ -6,7 +6,7 @@ const CHARS_FOR_PART_2: usize = 14;
 
 pub fn main_calc(array: &mut [char]) {
     println!("array.len() {}", array.len());
-    let file = read_input(6);
+    let file = read_input(6, false);
 
     let mut duplicate_chars: HashMap<char, i32> = HashMap::new();
 

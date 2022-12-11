@@ -1,9 +1,7 @@
-use std::str::Split;
-
 use crate::helper;
 
 pub fn part1() -> Option<()> {
-    let file = helper::read_input(4);
+    let file = helper::read_input(4, false);
 
     let mut contains = 0;
 
@@ -33,9 +31,6 @@ pub fn part1() -> Option<()> {
                 Ok(lr) => match right_left {
                     Ok(rl) => match right_right {
                         Ok(rr) => {
-                            let max_right = if lr > rr { rr } else { lr };
-                            let min_left = if ll < rl { ll } else { rl };
-
                             if lr >= rl && rr >= ll {
                                 println!("Line: {}", &line);
                                 contains += 1;

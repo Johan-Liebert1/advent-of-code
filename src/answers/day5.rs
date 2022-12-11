@@ -13,7 +13,7 @@ pub fn part1() {
         vec!['W', 'P', 'J'],
     ];
 
-    let file = read_input(5);
+    let file = read_input(5, false);
 
     for line in file.split("\n") {
         // move 2 from 4 to 6
@@ -60,7 +60,7 @@ pub fn part2() {
         vec!['W', 'P', 'J'],
     ];
 
-    let file = read_input(5);
+    let file = read_input(5, false);
 
     for line in file.split("\n") {
         // move 2 from 4 to 6

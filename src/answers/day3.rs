@@ -43,7 +43,7 @@ const SMALL_PRIORITY_START: usize = 96;
 const CAPITAL_PRIORITY_START: usize = 38;
 
 pub fn part1() {
-    let file = read_input(3);
+    let file = read_input(3, false);
 
     let mut total_priority = 0;
 
@@ -71,7 +71,7 @@ pub fn part1() {
 }
 
 pub fn part2() {
-    let file = read_input(3);
+    let file = read_input(3, false);
 
     let mut lines_iter = file.split("\n");
 
