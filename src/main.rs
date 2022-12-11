@@ -4,5 +4,5 @@ mod helper;
 mod answers;
 
 fn main() {
-    answers::day7::part1();
+    answers::day7::part2();
 }
