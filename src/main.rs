@@ -1,8 +1,12 @@
 #![allow(dead_code, unused_parens)]
 
+use std::env;
+
 mod helper;
 mod answers;
 
 fn main() {
-    answers::day11::part1();
+    let args: Vec<String> = env::args().collect();
+
+    answers::day12::part2(if args.len() > 1 && args[1] == "test" { true } else { false });
 }
