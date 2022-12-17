@@ -8,5 +8,5 @@ mod answers;
 fn main() {
     let args: Vec<String> = env::args().collect();
 
-    answers::day12::part2(if args.len() > 1 && args[1] == "test" { true } else { false });
+    answers::day14::part2(if args.len() > 1 && args[1] == "test" { true } else { false });
 }
